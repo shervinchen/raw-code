@@ -1,10 +1,10 @@
 {
   "name": "raw-code",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "committier commit"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
     "@biomejs/biome": "2.4.9",
     "@types/node": "^25.5.0",
     "committier": "^0.2.3",
+    "lefthook": "^2.1.4",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   }
