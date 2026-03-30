@@ -1,5 +1,7 @@
 import { agent } from "./agent.ts";
 
-const { text } = await agent.generate({ prompt: "What is the current time?" });
+const res = await agent.generate({
+  prompt: "Summarize package.json and write it into README.md",
+});
 
-console.log(text);
+console.log(res.text);
