@@ -1,7 +1,23 @@
+import { createInterface } from "node:readline/promises";
+import type { ModelMessage } from "ai";
 import { agent } from "./agent.ts";
 
-const res = await agent.generate({
-  prompt: "Summarize package.json and write it into README.md",
-});
+const history: ModelMessage[] = [];
+const rl = createInterface(process.stdin, process.stdout);
 
-console.log(res.text);
+while (true) {
+  const ask = await rl.question("Ask: ");
+
+  if (!ask.trim()) break;
+
+  const userMessage: ModelMessage = { role: "user", content: ask };
+  const { response, text } = await agent.generate({
+    messages: [...history, userMessage],
+  });
+
+  console.log(text);
+  history.push(userMessage);
+  history.push(...response.messages);
+}
+
+rl.close();
