@@ -25,9 +25,11 @@
     "typescript": "^6.0.2"
   },
   "dependencies": {
+    "@ai-sdk/openai-compatible": "^2.0.37",
     "@inkjs/ui": "^2.0.0",
     "ai": "^6.0.141",
     "dedent": "^1.7.2",
+    "dotenv": "^17.4.0",
     "globby": "^16.2.0",
     "ink": "^6.8.0",
     "ink-big-text": "^2.0.0",

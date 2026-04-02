@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { createInterface } from "node:readline/promises";
 import type { ModelMessage } from "ai";
 import { render } from "ink";

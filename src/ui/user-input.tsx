@@ -40,6 +40,8 @@ export function UserInput() {
           uiStore.messages.push(uiMessage);
         }
       }
+      const { totalTokens } = await result.totalUsage;
+      uiStore.totalUsedTokens = totalTokens ?? 0;
     } finally {
       uiStore.isThinking = false;
     }
