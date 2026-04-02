@@ -7,7 +7,6 @@ A terminal-based AI coding agent built with TypeScript, React, and the AI SDK. T
 ```bash
 npm install -g raw-code
 
-# Your API key for Zhipu
 export ZHIPU_APIKEY=your_api_key_here
 ```
 

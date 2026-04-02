@@ -41,11 +41,8 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
 
-    // custom options
     "rewriteRelativeImportExtensions": true,
-    "resolveJsonModule": true,
-    "noEmit": true,
-    "composite": true
+    "resolveJsonModule": true
   },
   "include": ["src", "evals"]
 }
