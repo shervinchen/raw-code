@@ -1,14 +1,19 @@
 {
   "name": "raw-code",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "A terminal-based AI coding agent built with TypeScript, React, and the AI SDK.",
+  "main": "dist/main.js",
+  "bin": "dist/main.js",
   "type": "module",
   "scripts": {
-    "start": "tsx src/main.ts",
+    "start": "node dist/main.js",
     "dev": "tsx --watch src/main.ts",
+    "build": "tsc -b tsconfig.build.json",
     "test": "tsx --test",
-    "commit": "committier commit"
+    "commit": "committier commit",
+    "typecheck": "tsc -b",
+    "check": "biome check --write",
+    "prepare": "tsc -b tsconfig.build.json"
   },
   "keywords": [],
   "author": "",
