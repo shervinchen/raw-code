@@ -30,7 +30,7 @@ export function App() {
 
   return (
     <ThemeProvider theme={customTheme}>
-      <Box flexDirection="column" height={rows - 1}>
+      <Box flexDirection="column" minHeight={rows - 1} gap={1}>
         <Hero />
         <Messages />
         <Usage />
