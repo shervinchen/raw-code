@@ -2,6 +2,8 @@
 
 A terminal-based AI coding agent built with TypeScript, React, and the AI SDK. This agent leverages large language models to assist with file operations and system tasks through an interactive command-line interface.
 
+<img src="./demo.gif" />
+
 ## Quick Start
 
 ```bash
