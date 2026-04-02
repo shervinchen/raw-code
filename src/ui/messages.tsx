@@ -2,6 +2,7 @@ import { Badge, Spinner } from "@inkjs/ui";
 import type { UIMessage } from "ai";
 import { Box, Text } from "ink";
 import { useSnapshot } from "valtio";
+import { Approval } from "./approval.tsx";
 import { uiStore } from "./ui.store.ts";
 
 function UserMessage({ message }: { message: UIMessage }) {
@@ -78,7 +79,8 @@ export function Messages() {
           <AIMessage key={message.id} message={message} />
         ) : null,
       )}
-      {snap.isThinking && <Thinking />}
+      {snap.isThinking && !snap.approval && <Thinking />}
+      {snap.approval && <Approval />}
     </Box>
   );
 }

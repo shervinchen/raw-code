@@ -6,6 +6,14 @@ type UIStore = {
   isThinking: boolean;
   totalUsedTokens: number;
   maxContextWindowTokens: number;
+  approval?:
+    | {
+        toolName: string;
+        args?: string | undefined;
+        reason?: string | undefined;
+        resolve: (approved: boolean) => void;
+      }
+    | undefined;
 };
 
 export const uiStore = proxy<UIStore>({
