@@ -5,9 +5,8 @@ import {
   readUIMessageStream,
   type UIMessage,
 } from "ai";
-import { Box, Text } from "ink";
+import { Box } from "ink";
 import { useReducer } from "react";
-import { useSnapshot } from "valtio";
 import { agentService } from "../services/agent.service.ts";
 import { uiStore } from "./ui.store.ts";
 

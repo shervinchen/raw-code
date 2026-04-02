@@ -1,8 +1,7 @@
 import { defaultTheme, extendTheme, ThemeProvider } from "@inkjs/ui";
-import { Box, Text, useInput } from "ink";
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { Box, useInput } from "ink";
+import { useSyncExternalStore } from "react";
 import { useSnapshot } from "valtio";
-import { Approval } from "./approval.tsx";
 import { Hero } from "./hero.tsx";
 import { Messages } from "./messages.tsx";
 import { uiStore } from "./ui.store.ts";
