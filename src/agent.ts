@@ -10,5 +10,6 @@ export const agent = new ToolLoopAgent({
   model: zhipuGLMModel,
   stopWhen: stepCountIs(10),
   temperature: 0.1,
-  tools: { ...mcpTools, ...internalTools },
+  // tools: { ...mcpTools, ...internalTools },
+  tools: internalTools,
 });
