@@ -25,9 +25,9 @@ Once running:
 - **Runtime**: Node.js with TypeScript
 - **AI/ML**: AI SDK, OpenAI, Ollama
 - **UI**: Ink (React for CLI), Ink UI components
-- **State Management**: Valtio
-- **Utilities**: Zod (validation), dedent, marked (markdown)
-- **Tooling**: pnpm, Biome, Lefthook
+- **State Management**: valtio
+- **Utilities**: zod (validation), dedent, marked (markdown)
+- **Tooling**: pnpm, biome, lefthook
 
 ## License
 

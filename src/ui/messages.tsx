@@ -47,7 +47,9 @@ function AIMessage({ message }: { message: UIMessage }) {
                     {" => "}
                   </Text>
                   <Text color="yellowBright" dimColor>
-                    {p.output as string}
+                    {typeof p.output === "string"
+                      ? p.output
+                      : JSON.stringify(p.output)}
                   </Text>
                 </Text>
               );
